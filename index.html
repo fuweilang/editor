@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>富文本编辑器</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/editor.css">
+	<script src="_src/core/jquery-1.11.3.min.js" charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+		<div class="editor-container">
+			<div class="editor-toolbar">
+				<div class="editor-btn-toolbar">
+					<div id="btnBold" class="edi-btn edi-btn-bold">B</div>
+					<div id="btnItalic" class="edi-btn edi-btn-italic">I</div>
+					<div id="btnUnderline" class="edi-btn edi-btn-underline">U</div>
+					<div id="btnFontsize" class="edi-btn edi-btn-fontsize">
+						<select id="btnFontsizeSelect" class="btn-fontsizeSelect">
+							<option value="12px">12px</option>
+							<option value="16px" selected>16px</option>
+							<option value="20px">20px</option>
+							<option value="24px">24px</option>
+							<option value="28px">28px</option>
+							<option value="32px">32px</option>
+						</select>
+					</div>
+					<div id="btnFontcolor" class="edi-btn edi-btn-fontcolor">
+						<label>字体颜色：</label>
+						<div class="edi-btn-fontcolor-area">
+							<span class="edi-btn-fontcolor-icon" id="btnFontcolorIcon" value="#d06b64">A</span>
+							<span class="fontcolor-downArrow" id="fontcolorDownArrow">v</span>
+						</div>
+						<div id="fontColorpicker" class="font-colorpicker">
+							<span value="#ffffff"></span>
+							<span value="#000000"></span>
+							<span value="#d06b64"></span>
+							<span value="#f83a22"></span>
+							<span value="#fa573c"></span>
+							<span value="#ff7537"></span>
+							<span value="#ffad46"></span>
+							<span value="#42d692"></span>
+							<span value="#16a765"></span>
+							<span value="#7bd148"></span>
+							<span value="#b3dc6c"></span>
+							<span value="#fbe983"></span>
+							<span value="#fad165"></span>
+							<span value="#92e1c0"></span>
+							<span value="#9fe1e7"></span>
+							<span value="#9fc6e7"></span>
+							<span value="#4986e7"></span>
+							<span value="#9a9cff"></span>
+							<span value="#b99aff"></span>
+							<span value="#c2c2c2"></span>
+							<span value="#cabdbf"></span>
+							<span value="#cca6ac"></span>
+							<span value="#f691b2"></span>
+							<span value="#cd74e6"></span>
+							<span value="#a47ae2"></span>
+						</div>
+					</div>
+					<div id="btnBgcolor" class="edi-btn edi-btn-bgcolor">
+						<label>背景颜色：</label>
+						<div class="edi-btn-bgcolor-area">
+							<span class="edi-btn-bgcolor-icon" id="btnBgcolorIcon" value="#d06b64"></span>
+							<span class="bgcolor-downArrow" id="bgcolorDownArrow">v</span>
+						</div>
+						<div id="bgColorpicker" class="bg-colorpicker">
+							<span value="#ffffff"></span>
+							<span value="#000000"></span>
+							<span value="#d06b64"></span>
+							<span value="#f83a22"></span>
+							<span value="#fa573c"></span>
+							<span value="#ff7537"></span>
+							<span value="#ffad46"></span>
+							<span value="#42d692"></span>
+							<span value="#16a765"></span>
+							<span value="#7bd148"></span>
+							<span value="#b3dc6c"></span>
+							<span value="#fbe983"></span>
+							<span value="#fad165"></span>
+							<span value="#92e1c0"></span>
+							<span value="#9fe1e7"></span>
+							<span value="#9fc6e7"></span>
+							<span value="#4986e7"></span>
+							<span value="#9a9cff"></span>
+							<span value="#b99aff"></span>
+							<span value="#c2c2c2"></span>
+							<span value="#cabdbf"></span>
+							<span value="#cca6ac"></span>
+							<span value="#f691b2"></span>
+							<span value="#cd74e6"></span>
+							<span value="#a47ae2"></span>
+						</div>
+					</div>
+					<div id="justifyleft" class="edi-btn edi-btn-justifyleft">左</div>
+					<div id="justifycenter" class="edi-btn edi-btn-justifycenter">中</div>
+					<div id="justifyright" class="edi-btn edi-btn-justifyright">右</div>
+				</div>
+			</div>
+			<div class="editor-body">
+				<div id="myEditor" class="edi-body-container" contenteditable="true">
+					从前有座山，山里有个庙，庙里有个和尚讲故事……这是一个古老的童谣，每个人都知道下面一句说了什么，但还要不厌其烦的说下去。犹如我们的人性，陷入一种循环，不可逃脱，无法自拔。
+				</div>
+			</div>
+		</div>
+	<script src="_src/core/BaseEvent.js" charset="utf-8" type="text/javascript"></script>
+	<script src="_src/core/Selection.js" charset="utf-8" type="text/javascript"></script>
+	<script src="_src/plugins/judgeState.js" charset="utf-8" type="text/javascript"></script>
+	<script src="_src/plugins/basestyle.js" charset="utf-8" type="text/javascript"></script>
+	<script src="_src/plugins/font.js" charset="utf-8" type="text/javascript"></script>
+
+	<script>
+	</script>
+</body>
+</html>

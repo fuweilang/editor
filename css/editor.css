@@ -1,0 +1,389 @@
+@charset 'utf-8'
+
+.wrap {
+	padding-top: 20px;
+	width: 820px;
+	height: 400px;
+	background: #888;
+}
+.editor-container {
+	margin-top: 30px;
+	width: 800px;
+	height: 340px;
+	border: 1px solid #888;
+}
+.editor-toolbar {
+	width: 800px;
+	height: 32px;
+	border-bottom: 1px solid #888;
+}
+.editor-btn-toolbar {
+	width: 790px;
+	height: 22px;
+	padding: 5px;
+}
+.edi-btn {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	margin: 0 1px;
+	padding: 1px;
+	border: none;
+	background: none;
+	width: 22px;
+	height: 22px;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.edi-btn-source {
+	color: #419ac8;
+	font-size: 12px;
+	width: 30px;
+}
+.edi-btn-bold {
+	font-weight: bold;
+	cursor: pointer;
+}
+.edi-btn-bold:hover {
+	background: #abcdfc;
+}
+.edi-btn-italic {
+	font-style: italic;
+	cursor: pointer;
+}
+.edi-btn-italic:hover {
+	background: #abcdfc;
+}
+.edi-btn-underline {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.edi-btn-underline:hover {
+	background: #abcdfc;
+}
+.edi-btn-sel {
+	background: #abcdfc;
+}
+
+.edi-btn-fontsize {
+	width: 100px;
+	margin-left: 10px;
+}
+.btn-fontsizeSelect {
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: left;;
+}
+.edi-btn-bgcolor {
+	width: 100px;
+	margin-left: 10px;
+}
+.btn-bgcolor {
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: left;;
+}
+/*字体颜色按钮*/
+.edi-btn-fontcolor {
+	position: relative;
+	width: 110px;
+	margin-left: 10px;
+	text-align: left;
+}
+.edi-btn-fontcolor select{
+	position: absolute;
+	top: 30px;
+	z-index: 10;
+}
+.edi-btn-fontcolor-area {
+	float: left;
+	width: 32px;
+	height: 22px;
+	background: #fff;
+}
+.edi-btn-fontcolor-icon {
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #ccc;
+	background: #d06b64;
+	text-align: center;
+	cursor: pointer;
+}
+.fontcolor-downArrow{
+	float: left;
+	width: 8px;
+	height: 20px;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+.edi-btn-fontcolor label {
+	float: left;;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	background: #fff;
+}
+.font-colorpicker {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	width: 255px;
+	padding: 5px 0 0 5px;
+	background: #fff;
+	z-index: 10;
+
+	background-color: #fff;
+
+  border: 1px solid #ccc; 
+  border: 1px solid rgba(0, 0, 0, .15);
+
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+     -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.font-colorpicker p{
+	height: 25px;
+	line-height: 25px;
+}
+.font-colorpicker span {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+/*背景色按钮*/
+.edi-btn-bgcolor {
+	position: relative;
+	width: 110px;
+	margin-left: 10px;
+	text-align: left;
+}
+.edi-btn-bgcolor select{
+	position: absolute;
+	top: 30px;
+	z-index: 10;
+}
+.edi-btn-bgcolor-area {
+	float: left;
+	width: 32px;
+	height: 22px;
+	background: #fff;
+}
+.edi-btn-bgcolor-icon {
+	float: left;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #ccc;
+	background: #d06b64;
+	text-align: center;
+	cursor: pointer;
+}
+.bgcolor-downArrow{
+	float: left;
+	width: 8px;
+	height: 20px;
+	border: 1px solid #999;
+	cursor: pointer;
+}
+.edi-btn-bgcolor label {
+	float: left;;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	background: #fff;
+}
+.bg-colorpicker {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	width: 255px;
+	padding: 5px 0 0 5px;
+	background: #fff;
+	z-index: 10;
+
+	background-color: #fff;
+
+  border: 1px solid #ccc; 
+  border: 1px solid rgba(0, 0, 0, .15);
+
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+     -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.bg-colorpicker p{
+	height: 25px;
+	line-height: 25px;
+}
+.bg-colorpicker span {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.btn-fontcolor {
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	text-align: left;;
+}
+
+.editor-body {
+	width: 800px;
+	height: 300px;
+	padding-top: 5px;
+}
+.edi-body-container {
+	width: 780px;
+	height: 290px;
+	padding: 5px 10px;
+	overflow-y: scroll;
+}
+
+.setBold {
+	font-weight: bold;
+}
+.releaseBold {
+	font-weight: normal;
+}
+.setItalic {
+	font-style: italic;
+}
+.releaseItalic {
+	font-style: normal;
+}
+.setUnderline {
+	text-decoration: underline;
+}
+.releaseUnderline {
+	text-decoration: none;
+}
+.edi-btn-justifyleft {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #888;
+	font-size: 12px;
+	text-align: center;
+}
+.edi-btn-justifyleft:hover {
+	cursor: pointer;
+	background: #45a3d4; 
+}
+.edi-btn-justifycenter {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #888;
+	font-size: 12px;
+	text-align: center;
+}
+.edi-btn-justifycenter:hover {
+	background: #45a3d4; 
+	cursor: pointer;
+}
+.edi-btn-justifyright {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #888;
+	font-size: 12px;
+	text-align: center;
+}
+.edi-btn-justifyright:hover {
+	background: #45a3d4; 
+	cursor: pointer;
+}
+
+.edi-body-container div::selection {
+	background: #bbb;
+}
+.edi-body-container p::selection {
+	background: #bbb;
+}
+.edi-body-container span::selection {
+	background: #bbb;
+}
+.edi-body-container b::selection {
+	background: #bbb;
+}
+.edi-body-container i::selection {
+	background: #bbb;
+}
+.edi-body-container u::selection {
+	background: #bbb;
+}
+.edi-body-container strong::selection {
+	background: #bbb;
+}
+.edi-body-container font::selection {
+	background: #bbb;
+}
+.edi-body-container em::selection {
+	background: #bbb;
+}
+.edi-body-container div::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container p::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container span::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container b::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container i::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container u::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container strong::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container em::-moz-selection {
+	background: #bbb;
+}
+.edi-body-container font::-moz-selection {
+	background: #bbb;
+}
+
+.edi-body-container strong {
+	font-weight: bold;
+}
+.edi-body-container em {
+	font-style: italic;
+}
